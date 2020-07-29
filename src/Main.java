@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int quantity = 20;
-        int price = 2000;
-        long miles = price / quantity;
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        long miles = service.calculate(price);
 
         System.out.println(miles);
-
     }
 }
+
+
+
+
